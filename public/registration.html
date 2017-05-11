@@ -6,45 +6,58 @@
     <meta charset="UTF-8">
     <title>Registration</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <form class="form-horizontal">
-        <!-- RFID number label and textbox -->
-        <div class="form-group">
-            <label for="rfid" class="col-sm-2">RFID number</label>
-            <div class="col-sm-4">
-                <input type="text" class="form-control" id="rfidInput" placeholder="RFID number">
-            </div>
+    <div class="row">
+        <div class="col-md-3"><img src="img/leftRegCol.png"></div>
+        <div class="col-md-6" id="registrationMid">
+            <h1>REGISTRATION</h1>
+            <form class="form-horizontal">
+                <!-- RFID number label and textbox -->
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <label for="rfid" class="col-sm-4">RFID number</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="rfidInput" placeholder="RFID number">
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <!-- Name label and textbox -->
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <label for="name" class="col-sm-4">Please enter your name:</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Cap'n Nautilus">
+                    </div>  
+                    <div class="col-sm-3"></div>
+                </div>
+                <!-- Age group label and menu -->
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <label for="ageGroup" class="col-sm-4">Select your age group:</label>
+                    <div class="col-sm-4">
+                        <select class="form-control" id="ageGroupInput">
+                            <option>Elementary school</option>
+                            <option>Middle school</option>
+                            <option>High school</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="text-center">
+                    <!-- Submit button. To stop the whole page from refreshing after the button is pressed, move the button line outside of the </form> tag -->
+                        <button type="submit" class="btn btn-lg" onclick="update()" id="submit">SUBMIT</button>
+                </div>
+            </form>
         </div>
-        <!-- Name label and textbox -->
-        <div class="form-group">
-            <label for="name" class="col-sm-2">Name</label>
-            <div class="col-sm-4">
-                <input type="text" class="form-control" id="nameInput" placeholder="Name">
-            </div>
-        </div>
-        <!-- Age group label and menu -->
-        <div class="form-group">
-            <label for="ageGroup" class="col-sm-2">Age group</label>
-            <div class="col-sm-4">
-                <select class="form-control" id="ageGroupInput">
-        <option>Elementary school</option>
-        <option>Middle school</option>
-        <option>High school</option>
-      </select>
-            </div>
-        </div>
-        <div class="col-sm-offset-2 col-sm-10">
-            <!-- Submit button. To stop the whole page from refreshing after the button is pressed, move the button line outside of the </form> tag -->
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" onclick="update()">Submit</button>
-            </div>
-    </form>
+        <div class="col-md-3"><img src="img/rightRegCol.png"></div>
+    </div>
 
-    <!-- Text output for debugging -->
-    <p id="testTextDisplay"></p>
+    <!-- Text output for debugging
+    <p id="testTextDisplay"></p>-->
 
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
