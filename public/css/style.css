@@ -5,9 +5,10 @@ h1 {
     font-family: 'Hind', sans-serif;
 }
 
-#registrationMid {
-    background-image: url("../img/regBackground.png");
+body {
+    background-image: url("../img/whole-back.png");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #submit {
