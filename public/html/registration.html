@@ -1,4 +1,4 @@
-<!-- Authors: Proud -->
+<!-- Authors: Proud, Joyce -->
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +7,7 @@
     <title>Registration</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
@@ -15,7 +15,10 @@
         <div class="col-md-3"><!--Spacer--></div>
         <div class="col-md-6" id="registrationMid">
             <h1>REGISTRATION</h1>
-            <form class="form-horizontal">
+            
+            <!-- NEED TO CHANGE THIS TO A PAGE THAT WE WANT IT TO GO TO-->
+            <form class="form-horizontal" action="blank.html">
+                
                 <!-- RFID number label and textbox -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
@@ -25,6 +28,7 @@
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
+                
                 <!-- Name label and textbox -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
@@ -34,6 +38,7 @@
                     </div>  
                     <div class="col-sm-3"></div>
                 </div>
+                
                 <!-- Age group label and menu -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
@@ -47,9 +52,10 @@
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
+                
                 <div class="text-center">
                     <!-- Submit button. To stop the whole page from refreshing after the button is pressed, move the button line outside of the </form> tag -->
-                        <button type="submit" class="btn btn-lg" onclick="update()" id="submit">SUBMIT</button>
+                        <button type="submit" class="btn btn-lg" onclick="return update()" id="submit">SUBMIT</button>
                 </div>
             </form>
         </div>
@@ -58,10 +64,10 @@
 
     <!-- Text output for debugging
     <p id="testTextDisplay"></p>-->
-
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-    <script src="js/registration.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  
+    <script src="../js/registration.js"></script>
 </body>
 
 </html>
