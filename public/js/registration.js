@@ -24,8 +24,7 @@ function writeToFirebase(idInput, nameInput, ageGroupInput) {
     // Write the object under the database root "users"
     // Datbase schema: RFID tree-->user object that contains links id with name and age group
     database.ref("RFID/" + idInput).set({
-        id: idInput
-        ,
+        id: idInput,
         name: nameInput,
         ageGroup: ageGroupInput,
     });
