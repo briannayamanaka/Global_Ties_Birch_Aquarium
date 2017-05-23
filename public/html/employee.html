@@ -8,41 +8,41 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
-    
+
 </head>
 <body>
 <div class="row">
         <div class="col-md-3"><!--Spacer--></div>
         <div class="col-md-6" id="employeeMid">
-            
+
             <h1>EMPLOYEE ACCESS</h1>
-            
-            <!-- NEED TO CHANGE THIS TO A PAGE THAT WE WANT IT TO GO TO like 
+
+            <!-- NEED TO CHANGE THIS TO A PAGE THAT WE WANT IT TO GO TO like
             action="registration.html"-->
             <form class="form-horizontal">
-                
+
                 <!-- Employee ID label and textbox -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
-                    <label for="rfid" class="col-sm-4">Employee ID</label>
+                    <label for="Email" class="col-sm-4">Employee Email</label>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" id="idInput" 
-                        placeholder="employee number">
+                        <input type="text" class="form-control" id="emailInput"
+                        placeholder="employee email">
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
-                
+
                 <!-- Password Name label and textbox -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
                     <label for="name" class="col-sm-4">Please enter your password:</label>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" id="pwdInput" 
+                        <input type="password" class="form-control" id="pwdInput"
                         placeholder="231">
-                    </div>  
+                    </div>
                     <div class="col-sm-3"></div>
                 </div>
-                
+
                 <div class="text-center">
                     <!-- Submit button. To stop the whole page from refreshing after the button is pressed, move the button line outside of the </form> tag -->
                         <button type="submit" class="btn btn-lg" onclick="return login()" id="submit">SUBMIT
@@ -57,7 +57,7 @@
     <p id="testTextDisplay"></p>-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-  
+
   	<!-- connecting the .js file-->
     <script src="../js/employee.js"></script>
 
