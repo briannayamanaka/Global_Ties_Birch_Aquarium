@@ -14,7 +14,7 @@ $(document).ready(function () {
                                            
       // push number to array
       scannedInput.push(String.fromCharCode(scanEvent.which));
-                }
+    }
     
       setTimeout(function () {
       
