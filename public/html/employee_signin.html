@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+    <script src="../js/employee_authentication.js"></script>
+    <title>Our Web Application Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+    html, body{
+        text-align: center;
+        font-family: Avenir;
+        color: white;
+        background-color: rgb(61, 79, 93);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: table
+    }
+    #container{
+        width: 100%;
+        height: 60%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle
+    }
+    input{
+        width: 15em;
+        color: black;
+        padding: .5em .6em;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 3px #ddd;
+        border-radius: 4px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        margin: .25em 0;
+        outline: none;
+        transition: ease-in-out, width .35s ease-in-out;
+    }
+    input:focus{
+        width: 17em;
+        border: 2px solid rgba(81, 203, 238, 1);
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    }
+    fieldset *{
+        padding: 5px;
+    }
+    h1{
+        color:white;
+    }
+    button{
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .errorPop{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: red;
+        visibility: hidden;
+        display: none;
+        font-size: 12px;
+        font-style: italic;
+    }
+    #signUpLink{
+        color: lightblue;
+        text-decoration: none;
+    }
+    #signUpLink:hover{
+        color: #0078e7;
+        text-decoration: none;
+    }
+</style>
+<body>
+<div id="container">
+    <h1 >Login to your account</h1>
+    <input id="email" type="text" placeholder="Username"><br>
+    <p id="emailPop" class="errorPop">Invalid Email</p>
+    <input id="password" type="password" placeholder="Password"><br>
+    <p id="passPop" class="errorPop">Invalid Password <br>Must be 6 characters or more</p>
+    <button id="submit" class="pure-button pure-button-primary">Sign In</button>
+    <p>Don't have an account?
+        <a id="signUpLink" href="employee_signup.html">Sign Up.</a>
+    </p>
+</div>
+</body>
+</html>

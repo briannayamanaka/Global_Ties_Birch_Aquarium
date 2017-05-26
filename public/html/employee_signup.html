@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <!-- Firebase Stuff -->
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+    <script src="../js/employee_signup.js"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Signup Page</title>
+</head>
+<style>
+    html, body{
+        text-align: center;
+        font-family: Avenir;
+        color: white;
+        background-color: rgb(61, 79, 93);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: table
+    }
+    #container{
+        /*border-radius: 2px;*/
+        /*border:2px solid rgba(255,255,255,0.4);*/
+        width: 100%;
+        height: 60%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle
+    }
+    input{
+        width: 15em;
+        color: black;
+        padding: .5em .6em;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 3px #ddd;
+        border-radius: 4px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        margin: .25em 0;
+        outline: none;
+        transition: ease-in-out, width .35s ease-in-out;
+    }
+    input:focus{
+        width: 17em;
+        border: 2px solid rgba(81, 203, 238, 1);
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    }
+    fieldset *{
+        padding: 5px;
+    }
+    h1{
+        color:white;
+    }
+    button{
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    button:focus{
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    }
+    .errorPop{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: red;
+        visibility: hidden;
+        display: none;
+        font-size: 12px;
+        font-style: italic;
+    }
+    #signInLink{
+        color: lightblue;
+        text-decoration: none;
+    }
+    #signInLink:hover{
+        color: #0078e7;
+        text-decoration: none;
+    }
+</style>
+<body>
+<div id="container">
+    <h1>Sign up to create your Birch Aquarium Employee profile and have admin access to our application</h1>
+    <input id="email" type="text" placeholder="Username"><br>
+    <p id="emailPop" class="errorPop">Invalid Email</p>
+    <input id="password" type="password" placeholder="Password"><br>
+    <p id="passPop" class="errorPop">Invalid Password <br>Must be 6 characters or more</p>
+    <button id="submit" class="pure-button pure-button-primary">Sign up</button>
+    <p>Already have an account?
+        <a id="signInLink" href="employee_signin.html">Sign In.</a>
+    </p>
+</div>
+</body>
+</html>
