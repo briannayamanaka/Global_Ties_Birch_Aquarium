@@ -12,13 +12,15 @@
 
 <body>
     <div class="row">
-        <div class="col-md-3"><!--Spacer--></div>
+        <div class="col-md-3">
+            <!--Spacer-->
+        </div>
         <div class="col-md-6" id="registrationMid">
             <h1>REGISTRATION</h1>
-            
+
             <!-- NEED TO CHANGE THIS TO A PAGE THAT WE WANT IT TO GO TO-->
-            <form class="form-horizontal" action="blank.html">f
-                
+            <form class="form-horizontal" action="blank.html">
+
                 <!-- RFID number label and textbox -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
@@ -28,17 +30,52 @@
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
+
+                <!-- Language label and menu -->
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <label for="language" class="col-sm-4">Select your language:</label>
+                    <div class="col-sm-4">
+                        <select class="form-control" id="languageInput">
+                            <option>English</option>
+                            <option>Español</option>
+                            <option>中文</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
                 
+                <!-- Avatar selection -->
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <label for="name" class="col-sm-4">Who do you want to be your tour guide today?</label>
+                    <div class="col-sm-4">
+                        <table class="table">
+                            <tr>
+                                <td><img src="http://res.publicdomainfiles.com/pdf_view/59/13534131012551.png" class="img-responsive" onclick="setAvatar('Goldie the Fish')"></td>
+                                <td><img src="http://res.publicdomainfiles.com/pdf_view/59/13534131012551.png" class="img-responsive" onclick="setAvatar('Goldie the Fish2')"></td>
+                                <td><img src="http://res.publicdomainfiles.com/pdf_view/59/13534131012551.png" class="img-responsive" onclick="setAvatar('Goldie the Fish3')"></td>
+                            </tr>
+                            <tr>
+                                <td onclick="setAvatar('Goldie the Fish')">Goldie the Fish</td>
+                                <td onclick="setAvatar('Goldie the Fish2')">Goldie the Fish2</td>
+                                <td onclick="setAvatar('Goldie the Fish3')">Goldie the Fish3</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
                 <!-- Name label and textbox -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
                     <label for="name" class="col-sm-4">Please enter your name:</label>
                     <div class="col-sm-4">
                         <input type="text" class="form-control" id="nameInput" placeholder="Cap'n Nautilus">
-                    </div>  
+                    </div>
                     <div class="col-sm-3"></div>
                 </div>
-                
+
                 <!-- Age group label and menu -->
                 <div class="form-group">
                     <div class="col-sm-1"></div>
@@ -52,21 +89,23 @@
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
-                
+
                 <div class="text-center">
                     <!-- Submit button. To stop the whole page from refreshing after the button is pressed, move the button line outside of the </form> tag -->
-                        <button type="submit" class="btn btn-lg" onclick="return update()" id="submit">SUBMIT</button>
+                    <button type="submit" class="btn btn-lg" onclick="return update()" id="submit">SUBMIT</button>
                 </div>
             </form>
         </div>
-        <div class="col-md-3"><!--Spacer--></div>
+        <div class="col-md-3">
+            <!--Spacer-->
+        </div>
     </div>
 
     <!-- Text output for debugging
     <p id="testTextDisplay"></p>-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-  
+
     <script src="../js/registration.js"></script>
 </body>
 
