@@ -1,3 +1,5 @@
+/* Authors: Brianna */
+
 window.onload = function() {
     console.log("hi!");
     var a = {
@@ -25,5 +27,5 @@ window.onload = function() {
     })
 }), firebase.auth().signOut(), firebase.auth().onAuthStateChanged(a => {
         a ? (window.location = "../html/employee_signin.html", console.log(a), console.log(a.email + " is logged in!")) : console.log("not logged in")
-    })
+    };)
 };
