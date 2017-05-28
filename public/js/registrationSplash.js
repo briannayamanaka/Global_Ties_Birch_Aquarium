@@ -25,7 +25,10 @@ $(document).ready(function () {
           var userID = scannedInput.join("");
           scanned = true;
           $("#userId").val(userID);
-          
+
+
+          //stores userID aka RFID locally in web bowser for persistent data
+          window.localStorage.setItem('userID',userID);
           if (scanned) {
             
             // if scanned, take user to registration page
