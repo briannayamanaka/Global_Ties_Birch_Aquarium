@@ -26,5 +26,5 @@ window.onload = function() {
     })
 }), firebase.auth().onAuthStateChanged(a => {
         a ? (console.log(a), window.location = "../html/employee.html") : console.log("not logged in")
-    };)
+    })
 };
