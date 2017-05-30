@@ -1,5 +1,3 @@
-/* Authors: Brianna */
-
 window.onload = function() {
     console.log("hi!");
     var a = {
