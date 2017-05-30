@@ -68,3 +68,7 @@ function update() {
     // For debugging: Set the paragraph element with the id "testTextDisplay" to contain the text that was inputted
     //document.getElementById("testTextDisplay").innerHTML = "RFID: " + rfidText + ", Name: " + nameText + ", Age group: " + ageGroupText;
 }
+
+function redirect(){
+    window.location.href = "../html/registrationSplash.html"
+  }

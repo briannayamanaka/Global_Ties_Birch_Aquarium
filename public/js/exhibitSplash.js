@@ -25,20 +25,27 @@ $(document).ready(function () {
                 var userID = scannedInput.join("");
                 scanned = true;
                 $("#userId").val(userID);
+                console.log("user: "+userID);
 
 
                 //stores userID aka RFID locally in web bowser for persistent data
-                window.localStorage.setItem('userID',userID);
+              //  window.localStorage.setItem('userID',userID);
                 if (scanned) {
-
-                    // if scanned, take user to registration page
-                    window.location.href = "../html/registration.html";
+                    // trying to read but not working
+                  /*  var refRFID = firebase.database().ref('RFID');
+                    refRFID.on('value',function(snapshot) {
+                      snapshot.forEach(function(childSnapshot) {
+                        var childData = childSnapshot.val();
+                      });
+                    }); */
+                    //jump to exhibit_terminal page
+                    window.location.href = "../html/exhibit_terminal.html";
                 }
             }
 
             // clear array
             scannedInput = [];
 
-        }, 500);
+        }, 5000);
     });
 });
