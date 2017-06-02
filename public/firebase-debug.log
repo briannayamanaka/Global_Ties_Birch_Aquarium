@@ -3,7 +3,7 @@
 [debug] CLI Version:  3.7.0
 [debug] Platform:     win32
 [debug] Node Version: v6.9.4
-[debug] Time:         Mon May 29 2017 20:09:01 GMT-0700 (Pacific Daylight Time)
+[debug] Time:         Fri Jun 02 2017 03:16:29 GMT-0700 (Pacific Daylight Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
@@ -13,22 +13,49 @@
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon May 29 2017 20:09:01 GMT-0700 (Pacific Daylight Time)
+ Fri Jun 02 2017 03:16:29 GMT-0700 (Pacific Daylight Time)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/birchaquarium-fd036  
- Mon May 29 2017 20:09:01 GMT-0700 (Pacific Daylight Time)
+ Fri Jun 02 2017 03:16:29 GMT-0700 (Pacific Daylight Time)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/birchaquarium-fd036/tokens  
- Mon May 29 2017 20:09:02 GMT-0700 (Pacific Daylight Time)
+ Fri Jun 02 2017 03:16:30 GMT-0700 (Pacific Daylight Time)
 [debug] <<< HTTP RESPONSE 200
 [info] Starting Firebase development server...
 [info] 
 [info] Project Directory: C:\Users\leona\OneDrive\Documents\Code_Projects\ENG100L
 [debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/birchaquarium-fd036  
- Mon May 29 2017 20:09:02 GMT-0700 (Pacific Daylight Time)
+ Fri Jun 02 2017 03:16:31 GMT-0700 (Pacific Daylight Time)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/33111057118/clients/_:getWebAppConfig  
- Mon May 29 2017 20:09:03 GMT-0700 (Pacific Daylight Time)
+ Fri Jun 02 2017 03:16:31 GMT-0700 (Pacific Daylight Time)
+[debug] <<< HTTP RESPONSE 200
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\leona\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.7.0
+[debug] Platform:     win32
+[debug] Node Version: v6.9.4
+[debug] Time:         Fri Jun 02 2017 03:24:59 GMT-0700 (Pacific Daylight Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/birchaquarium-fd036  
+ Fri Jun 02 2017 03:24:59 GMT-0700 (Pacific Daylight Time)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/birchaquarium-fd036/tokens  
+ Fri Jun 02 2017 03:25:00 GMT-0700 (Pacific Daylight Time)
+[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: C:\Users\leona\OneDrive\Documents\Code_Projects\ENG100L
+[debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/birchaquarium-fd036  
+ Fri Jun 02 2017 03:25:00 GMT-0700 (Pacific Daylight Time)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/33111057118/clients/_:getWebAppConfig  
+ Fri Jun 02 2017 03:25:01 GMT-0700 (Pacific Daylight Time)
 [debug] <<< HTTP RESPONSE 200
 [info] Public Directory: public
 [info] 

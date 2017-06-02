@@ -25,8 +25,35 @@ firebase.database().ref('/RFID/' + userID).once('value').then(function (snapshot
     console.log("Avatar: " + avatar);
     console.log("Age: " + age);
     console.log("Language: " + language);
-    
+
+    var pic = null;
+    switch(avatar) {
+      case 'Bea the Butterflyfish':
+        pic = "../img/avatars/butterflyfish.png";
+        break;
+      case 'Goldie the Goldfish':
+        pic = "../img/avatars/goldfish1.png";
+        break;
+      case 'George the Goldfish':
+        pic = "../img/avatars/goldfish2.png";
+        break;
+      case 'Pearl the Perch':
+        pic = "../img/avatars/perch.png";
+        break;
+      case 'Sally the Seahorse':
+        pic = "../img/avatars/sea-horse1.png";
+        break;
+      case 'Sam the Seahorse':
+        pic = "../img/avatars/sea-horse2.png";
+        break;
+      case 'Tammy the Turtle':
+        pic = "../img/avatars/sea-turtle.png";
+        break;
+      case 'Sophie the Shark':
+        pic = "../img/avatars/shark.png";
+    }
+
     // Update greeting text with name grabbed from Firebase data
     document.getElementById("greeting").innerHTML = "Hello " + name + "!";
+    document.getElementById("avatarImg").src = pic;
 });
-
