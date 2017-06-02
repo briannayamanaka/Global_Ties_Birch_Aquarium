@@ -25,4 +25,8 @@ firebase.database().ref('/RFID/' + userID).once('value').then(function (snapshot
     console.log("Avatar: " + avatar);
     console.log("Age: " + age);
     console.log("Language: " + language);
+    
+    // Update greeting text with name grabbed from Firebase data
+    document.getElementById("greeting").innerHTML = "Hello " + name + "!";
 });
+

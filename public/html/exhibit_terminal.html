@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Terminal</title>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-  <link rel="stylesheet" href="../css/exhibit_terminal.css">
+    <meta charset="UTF-8">
+    <title>Terminal</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link rel="stylesheet" href="../css/exhibit_terminal.css">
 </head>
+
 <body>
-<div class="row">
-  <div class="col-md-3">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="exhibitMid">
+            <h1>JELLYFISH EXHIBIT</h1>
 
-  </div>
-  <div class="col-md-6" id="exhibitMid">
-    <h1>JELLYFISH EXHIBIT</h1>
-
-    <form class="form-horizontal" action="blank.html">
-      <!-- Enter in RFID number to grab data for now -->
-      <div class="form-group">
-          <div class="col-sm-1"></div>
-          <label for="rfid" class="col-sm-4">Please tap card:</label>
-          <div class="col-sm-4">
-              <input type="text" class="form-control" id="rfid" placeholder="1234">
-          </div>
-          <div class="col-sm-3"></div>
-          <button type="submit" class="btn">Submit</button>
-      </div>
-  </div>
-
-</div>
-<h2>Once visitor scans RFID fob, he/she will be welcomed:</h2>
-<hr>
-<h3>Hello Charlie!</h3>
-<br>
-<h3>This exhibit is the jelly fish exhibit!</h3>
-<br>
-<h3>Click here to learn about what the jelly fish eats.</h3>
-<br>
-<h3>Click here to learn about what the jelly fish is afraid of.</h3>
-<br>
-<h3>Click here to learn fun facts about the jelly fish.</h3>
-
-       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+            <h2>Once visitor scans RFID fob, he/she will be welcomed:</h2>
+            <br>
+            <h3 id="greeting">Hello Charlie!</h3>
+            <br>
+            <h3>This exhibit is the jelly fish exhibit!</h3>
+            <br>
+            <h3>Click here to learn about what the jelly fish eats.</h3>
+            <br>
+            <h3>Click here to learn about what the jelly fish is afraid of.</h3>
+            <br>
+            <h3>Click here to learn fun facts about the jelly fish.</h3>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src="../js/exhibit_terminal.js"></script>
 </body>
-    
+
 </html>
