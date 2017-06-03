@@ -43,6 +43,6 @@ $(document).ready(function () {
             // clear array
             scannedInput = [];
 
-        }, 5000);
+        }, 500);
     });
 });
