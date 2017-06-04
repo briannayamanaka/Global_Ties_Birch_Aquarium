@@ -25,6 +25,6 @@ window.onload = function() {
         "auth/email-already-in-use" == a.code && (f.innerHTML = "Email already in use. Click Sign In link below!", f.style.visibility = "visible", f.style.display = "block"), "auth/invalid-email" == a.code && (e.innerHTML = "Invalid Email", e.style.visibility = "visible", e.style.display = "block"), "auth/wrong-password" == a.code && (f.innerHTML = "Incorrect Password", f.style.visibility = "visible", f.style.display = "block"), "auth/user-not-found" == a.code && (f.innerHTML = "Incorrect Username and or Password", f.style.visibility = "visible", f.style.display = "block"), console.log(a.code)
     })
 }), firebase.auth().onAuthStateChanged(a => {
-        a ? (console.log(a), window.location = "../html/employee.html") : console.log("not logged in")
+        a ? (console.log(a), window.location = "../html/employee_welcome.html") : console.log("not logged in")
     })
 };

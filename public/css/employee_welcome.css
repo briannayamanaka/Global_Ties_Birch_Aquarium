@@ -38,3 +38,19 @@ label {
     font-family: 'Hind', sans-serif;
     color: dimgray;
 }
+#welcome_message{
+    margin-top: 20%;
+    margin-left: 25%;
+    margin-right: 15%;
+    font-size: 30px;
+    font-size: 6vw;
+    color: #3298d8;
+    font-family: Didot;
+    text-align: center;
+}
+
+#navbar li{
+    display:inline;
+    font-size: 5px;
+    font-size: 3vw;
+}
